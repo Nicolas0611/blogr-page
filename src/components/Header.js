@@ -1,7 +1,7 @@
 import React from 'react'
 import { Nav,Navbar as _Navbar,Container, Row, Col } from 'react-bootstrap'
 import Navbar from './Navbar'
-function Header() {
+function Header({title,span}) {
 
     const heroButtons=[
         {
@@ -28,8 +28,8 @@ function Header() {
                 <div className="hero-content d-flex justify-content-center align-items-center flex-column">
                     <div>
                         <div className="hero-text d-flex flex-column align-items-center">
-                            <h1 className="text-center">A modern publishing platform</h1>
-                            <span>Grow your audience and build your online brand</span>
+                            <h1 className="text-center">{title}</h1>
+                            <span>{span}</span>
                         </div>
                         <div className="d-flex flex-row justify-content-center">
                             {renderBtns(heroButtons)}

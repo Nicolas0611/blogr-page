@@ -6,7 +6,10 @@ import './App.css';
 function App() {
   return (
     <>
-      <Header/>
+      <Header
+        title='A modern publishing platform'
+        span='Grow your audience and build your online brand'
+      />
     </>
   );
 }
