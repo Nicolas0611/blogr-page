@@ -18,13 +18,11 @@
   color: var(--white-color) !important;
   height: var(--nav-height);
 }
-
-.Izquierda:first-child{
-  padding-left: 80px !important;
-  color: var(--white-color) !important;
-}
 .Izquierda{
   padding-left: 40px !important;
+  color: var(--white-color) !important;
+}
+.Izquierda>a{
   color: var(--white-color) !important;
 }
 .Login-btn>a{
@@ -35,13 +33,18 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: white;
-
 }
 .white-btn>a{
   color: #FF505C;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 600;
   font-size: 16px;
+}
+.white-btn:hover{
+  background-color: #FF7B86;
+ }
+.white-btn>a:hover{
+  color: white !important;
 }
 .Hero-section{
   height: 90vh;
@@ -69,14 +72,18 @@
   padding-left: 20px;
   padding-right: 20px;
   border: 2px solid white;
-  margin-right: 20px;
- 
+  margin-left: 20px;
 }
 .outline-btn>a{
   color: white;
- 
 }
-.bg-hero-section{
+.outline-btn:hover{
+  background-color: white;
+}
+.outline-btn>a:hover{
+  color: #FF7B86!important;
+}
+ .bg-hero-section{
   background-image: url("../src/images/bg-pattern-intro.svg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */

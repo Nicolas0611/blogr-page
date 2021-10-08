@@ -1,5 +1,6 @@
-import React from 'react'
-import { Nav,Navbar as _Navbar,Container, Row, Col } from 'react-bootstrap'
+import React from 'react';
+import { Nav,Navbar as _Navbar} from 'react-bootstrap';
+
 import Navbar from './Navbar'
 function Header({title,span}) {
 
@@ -7,18 +8,18 @@ function Header({title,span}) {
         {
             link:"#",
             label:"Start for free",
-            tipo:"outline-btn"
+            tipo:"white-btn"
         },
         {
             link:"#",
             label:"Learn More",
-            tipo:"white-btn"
+            tipo:"outline-btn"
         }
     ]
     const renderBtns = (links) =>
     links.map((link,index)=>
         <div className={`${link.tipo}`} key={index}>
-            <Nav.Link  href={link.link}>{link.label}</Nav.Link>
+            <Nav.Link href={link.link}>{link.label}</Nav.Link>
         </div>
     ) 
     return (

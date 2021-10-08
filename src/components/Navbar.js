@@ -1,24 +1,33 @@
 import React from 'react';
 import Logo from '../images/logo.svg';
-import {Nav,Navbar as _Navbar,Container} from 'react-bootstrap';
-
+import {Nav,Navbar as _Navbar,Container, NavDropdown} from 'react-bootstrap';
+import iconArrow from '../images/icon-arrow-light.svg';
 
 function Navbar({renderBtns}) {
     const navLinks =[
         {
             link:"#",
             label: "Product",
-            position:"Izquierda"
+            position:"Izquierda",
+            subitem1: "Overview",
+            subitem2: "Pricing",
+            subitem3: "Marketplace"
         },
         {
             link:"#",
             label: "Company",
-            position:"Izquierda"
+            position:"Izquierda",
+            subitem1: "About",
+            subitem2: "Team",
+            subitem3: "Blog"
         },
         {
             link:"#",
             label:"Connect",
-            position:"Izquierda"
+            position:"Izquierda",
+            subitem1: "Contact",
+            subitem2: "Newsletter",
+            subitem3: "LinkedIn"
         },
 
     ]
@@ -36,7 +45,13 @@ function Navbar({renderBtns}) {
     ]
     const renderNavLinks = (links) =>
         links.map((link,index)=>
-            <Nav.Link className={link.position} key={index} href={link.link}>{link.label}</Nav.Link>
+            <div className="d-flex flex-row " key={index}>
+                <NavDropdown title={link.label} className={link.position} href={link.link}><img src={iconArrow}/>
+                    <NavDropdown.Item href="#">{link.subitem1}</NavDropdown.Item>
+                    <NavDropdown.Item href="#">{link.subitem2}</NavDropdown.Item>
+                    <NavDropdown.Item href="#">{link.subitem3}</NavDropdown.Item>
+                </NavDropdown>
+            </div>
         )
 
     return (
@@ -46,11 +61,10 @@ function Navbar({renderBtns}) {
                     <div>
                         <_Navbar.Brand href="#home"><img  src={Logo}/> </_Navbar.Brand>
                     </div>
-                    <div className="d-flex flex-row ">
-                        {renderNavLinks(navLinks)}
-                    </div>
-                </div>
 
+                        {renderNavLinks(navLinks)}
+
+                </div>
                 <div className="d-flex flex-row">
                         {renderBtns(navButtons)}
                 </div>
