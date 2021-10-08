@@ -24,7 +24,9 @@ function Header({title,span}) {
     return (
         <div className="Hero-section">
             <div className="bg-hero-section">
-                <Navbar/>
+                <Navbar
+                    renderBtns={renderBtns}
+                />
                 <div className="hero-content d-flex justify-content-center align-items-center flex-column">
                     <div>
                         <div className="hero-text d-flex flex-column align-items-center">

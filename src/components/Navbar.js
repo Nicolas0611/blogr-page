@@ -3,7 +3,7 @@ import Logo from '../images/logo.svg';
 import {Nav,Navbar as _Navbar,Container} from 'react-bootstrap';
 
 
-function Navbar() {
+function Navbar({renderBtns}) {
     const navLinks =[
         {
             link:"#",
@@ -38,12 +38,7 @@ function Navbar() {
         links.map((link,index)=>
             <Nav.Link className={link.position} key={index} href={link.link}>{link.label}</Nav.Link>
         )
-    const renderNavBtn = (links) =>
-        links.map((link,index)=>
-            <div className={`${link.tipo}`} key={index}>
-                <Nav.Link href={link.link}>{link.label}</Nav.Link>
-            </div>
-        ) 
+
     return (
         <_Navbar  className="navbar-content">
             <Container className="mt-2" >
@@ -57,7 +52,7 @@ function Navbar() {
                 </div>
 
                 <div className="d-flex flex-row">
-                        {renderNavBtn(navButtons)}
+                        {renderBtns(navButtons)}
                 </div>
             </Container>
          </_Navbar>

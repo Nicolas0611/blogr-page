@@ -85,3 +85,79 @@
   height: 90vh;
   z-index: 0;
 }
+.design-section{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.txt-design{
+  padding-top: 7.25em;
+  font-family: 'Overpass', sans-serif;
+}
+.txt-design>h2{
+  color: #1F3E5A;
+  font-weight: 600;
+  font-size: 40px;
+}
+.design-content{
+  height: 70vh;
+}
+.image-section{
+  position: relative;
+}
+.image-section>img{
+  /* transform:translate(20em,-10em);  */
+
+  position: absolute;
+  width: 130%;
+  left: 10rem;
+  top: -8em;
+  bottom: 0rem; 
+} 
+.txt-article{
+  padding-top: 5.875em;
+  max-height: 70vh;
+}
+.design-article__title{
+  color:#1F3E5A;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Overpass', sans-serif;
+  padding-bottom: 17px;
+}
+.design-article__text{
+  color:#4C5862;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Overpass', sans-serif;
+  width: 90%;
+
+}
+.introduce_article{
+  padding-bottom: 80px !important;
+}
+.section-infraestructure{
+  height: 45vh;
+  background: linear-gradient(135deg, #2D2E40 10%, #3F4164 100%);
+  border-bottom-left-radius: 100px 100px ;
+  border-top-right-radius: 100px 100px ;
+}
+.img-structure{
+  position: relative;
+}
+.img-structure>img{
+  position: absolute;
+  top:-5em ;
+}
+.Infrastrucure-txt>h2{
+  color:white;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+.Infrastrucure-txt>p{
+  color:white;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+}
