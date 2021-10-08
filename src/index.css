@@ -133,6 +133,7 @@
   width: 90%;
 
 }
+
 .introduce_article{
   padding-bottom: 80px !important;
 }
@@ -160,4 +161,57 @@
   font-family: 'Overpass', sans-serif;
   font-weight: 100;
   font-size: 1em;
+}
+.image-powerfull{
+  position: relative;
+}
+.image-powerfull>img{
+  /* transform:translate(20em,-10em);  */
+  position: absolute;
+  left: -30rem;
+  bottom: -10rem;
+
+} 
+.powerful-section{
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+}
+.powerful-content{
+  height: 70vh;
+}
+.Powerful-article__title{
+  color:#1F3E5A;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Overpass', sans-serif;
+  padding-bottom: 17px;
+}
+.Powerful-article__text{
+  color:#4C5862;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Overpass', sans-serif;
+}
+.footer-section{
+  background-color: #24242C;
+  height: 40vh;
+  border-top-right-radius: 100px 100px ;
+}
+.list-footer{
+  list-style-type: none;
+}
+.footer-title{
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 2.563em;
+}
+.footer-link{
+  color: var(--white-color);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  padding-bottom: 1.25em;
 }
