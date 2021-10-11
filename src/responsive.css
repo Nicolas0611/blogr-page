@@ -1,0 +1,23 @@
+@media screen and (max-width: 1400px){
+    .image-section>img{
+        top: -5em;
+    }
+}
+@media screen and (max-width: 1200px){
+    .image-section>img{
+        top: 0em;
+    }
+    .img-structure>img{
+        left:-2.5em ;
+    }
+}
+@media screen and (max-width: 1024px){
+    .Izquierda{
+        padding-left: 10px !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .Izquierda{
+        padding-left: 10px !important;
+    }
+}

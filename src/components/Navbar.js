@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../images/logo.svg';
-import {Nav,Navbar as _Navbar,Container, NavDropdown} from 'react-bootstrap';
+import {Navbar as _Navbar,Container, NavDropdown} from 'react-bootstrap';
 import iconArrow from '../images/icon-arrow-light.svg';
 
 function Navbar({renderBtns}) {
@@ -55,22 +55,20 @@ function Navbar({renderBtns}) {
         )
 
     return (
-        <_Navbar  className="navbar-content">
+        <_Navbar className="navbar-content">
             <Container className="mt-2" >
                 <div className="d-flex flex-row">
                     <div>
                         <_Navbar.Brand href="#home"><img  src={Logo}/> </_Navbar.Brand>
                     </div>
-
-                        {renderNavLinks(navLinks)}
-
+                    {renderNavLinks(navLinks)}
                 </div>
                 <div className="d-flex flex-row">
                         {renderBtns(navButtons)}
                 </div>
             </Container>
-         </_Navbar>
+        </_Navbar>
     )
 }
 
-export default Navbar
+export default Navbar;

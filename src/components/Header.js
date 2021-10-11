@@ -3,7 +3,6 @@ import { Nav,Navbar as _Navbar} from 'react-bootstrap';
 
 import Navbar from './Navbar'
 function Header({title,span}) {
-
     const heroButtons=[
         {
             link:"#",
@@ -23,7 +22,7 @@ function Header({title,span}) {
         </div>
     ) 
     return (
-        <div className="Hero-section">
+        <section className="Hero-section">
             <div className="bg-hero-section">
                 <Navbar
                     renderBtns={renderBtns}
@@ -40,8 +39,8 @@ function Header({title,span}) {
                     </div>
                 </div>  
             </div>      
-        </div>
+        </section>
     )
 }
 
-export default Header
+export default Header;
