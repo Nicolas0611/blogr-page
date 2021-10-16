@@ -108,6 +108,8 @@
 }
 .design-content{
   height: 90vh;
+  display: flex;
+  flex-direction: row;
 }
 .image-section{
   position: relative;

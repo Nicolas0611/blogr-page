@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../images/logo.svg';
 import {Navbar as _Navbar,Container, NavDropdown} from 'react-bootstrap';
 import iconArrow from '../images/icon-arrow-light.svg';
+import iconToggle from '../images/icon-hamburger.svg';
 
 function Navbar({renderBtns}) {
     const navLinks =[
@@ -57,14 +58,14 @@ function Navbar({renderBtns}) {
     return (
         <_Navbar className="navbar-content">
             <Container className="mt-2" >
-                <div className="d-flex flex-row">
+                <div className="d-flex flex-row flex-start">
                     <div>
-                        <_Navbar.Brand href="#home"><img  src={Logo}/> </_Navbar.Brand>
+                        <_Navbar.Brand href="#home"><img src={Logo}/> </_Navbar.Brand>
                     </div>
                     {renderNavLinks(navLinks)}
                 </div>
                 <div className="d-flex flex-row">
-                        {renderBtns(navButtons)}
+                    {renderBtns(navButtons)}
                 </div>
             </Container>
         </_Navbar>

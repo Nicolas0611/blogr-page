@@ -15,9 +15,40 @@
     .Izquierda{
         padding-left: 10px !important;
     }
+    .design-section{
+        height: 100vh;
+    }
+    .design-content{
+        height: 100vh;
+        position: relative;
+        flex-direction: column !important;
+    }
+    .txt-article{
+        order: 1;
+    }
+    .image-section{
+          order: 0;
+    }
+}
+@media screen and (min-width: 768px){
+    .nav__toggle{
+        display: none;
+    }
 }
 @media screen and (max-width: 768px){
     .Izquierda{
         padding-left: 10px !important;
     }
+    .image-section{
+        /* position: relative; */
+        display: block;
+      }
+      .image-section>img{
+        /* transform:translate(20em,-10em);  */
+        /* position: absolute; */
+        width: 80%;
+        /* left: 10rem; */
+        /* top: -8em; */
+        /* bottom: 0rem;  */
+      }
 }
